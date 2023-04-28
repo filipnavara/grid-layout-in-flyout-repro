@@ -1,5 +1,4 @@
 ﻿using Microsoft.Extensions.Logging;
-using Maui.FixesAndWorkarounds;
 
 namespace maui_flyout_test;
 
@@ -10,7 +9,6 @@ public static class MauiProgram
 		var builder = MauiApp.CreateBuilder();
 		builder
 			.UseMauiApp<App>()
-			.ConfigureMauiWorkarounds()
 			.ConfigureFonts(fonts =>
 			{
 				fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
